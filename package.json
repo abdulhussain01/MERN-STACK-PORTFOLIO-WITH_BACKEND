@@ -1,0 +1,12 @@
+{
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./backend && npm run dev & cd ./dashboard && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

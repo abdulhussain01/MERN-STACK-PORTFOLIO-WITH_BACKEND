@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root .light {
+  --common-white: #fff;
+  --common-white-two: #fff;
+  --common-black: #000;
+  --theme-primary: #1b74e4;
+  --theme-secondary: #fa5252;
+  --body-text: #44566c;
+  --body-heading: #000;
+  --heading-black: #0f172a;
+  --light-white: #f3f6f6;
+  --light-white-2: #f8fbfb;
+  --prink: #fff4f4;
+  --catkrill: #eef5fa;
+}
+
+:root .dark {
+  --common-white: #000;
+  --common-black: #fff;
+  --common-white-two: #fff;
+  --theme-primary: #1b74e4;
+  --theme-secondary: #fa5252;
+  --body-text: #a6a6a6;
+  --body-heading: #fff;
+  --heading-black: #0f172a;
+  --light-white: #1d1d1d;
+  --light-white-2: #f8fbfb;
+  --prink: #000;
+  --catkrill: #0d0d0d;
+}
+
+.light .imgbackground {
+  
+    background: conic-gradient(from 45deg, 
+    #d6cfcf,         /* Light pink (top-left) */
+    #e5e5e9,         /* Light blue (top-right) */
+    #b3f0ff,         /* Light green (bottom-right) */
+    #fdd5b1,         /* Light yellow (bottom-left) */
+    #ffbbde           /* Complete the circle with light pink */
+    );
+  /* background-color: linear-gradient(from #312312,to #332543);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+.dark .imgbackground {
+  background: conic-gradient(from 45deg, 
+  #281d41,         /* Dark brown (top-left) */
+  #263645,         /* Dark green (top-right) */
+  #1d437b,         /* Dark blue (bottom-right) */
+  #4a148c,         /* Dark purple (bottom-left) */
+  #3e2723          /* Complete the circle with dark brown */
+);
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+
+progress::-webkit-progress-bar {
+  border-radius: 7px; 
+  
+}
+progress::-webkit-progress-value {
+  background-color: var(--theme-primary);
+  border-radius: 30px;
+}
