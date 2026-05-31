@@ -30,9 +30,10 @@ export type ProjectType = {
 };
 
 export type ExperienceType = {
-  year?: string;
-  title?: string;
-  institute?: string;
+
+  company?: string;
+  
+  jobTitle?:string
   desc?: string;
   description?: string;
   type?: string;

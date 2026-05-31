@@ -6,7 +6,7 @@ const ExpCard = ({ item }: { item: ExperienceType }) => {
       <div className='absolute -left-7.5 top-2 size-3 bg-muted-foreground group-hover:bg-primary rounded-full transition duration-300'></div>
 
       <span className='text-neutral-400 lining-nums group-hover:text-primary transition duration-300'>
-        {item?.timeline?.from ?? item?.year ?? ''} - {item?.timeline?.to ?? ''}
+        {item?.timeline?.from ?? ''} - {item?.timeline?.to ?? ''}
       </span>
 
       <h3 className='text-lg font-bold mt-1'>{item?.jobTitle}</h3>
